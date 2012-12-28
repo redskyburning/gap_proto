@@ -17,24 +17,26 @@ h1, h2, h3, h4, h5, h6, div, p, figure, figcaption, ol, ul, li, section, article
   line-height: 1.4em;
 }
 
-/**********************************************
-					Vars
-**********************************************/
-/* line 30, ../scss/root.scss */
+/* line 26, ../scss/root.scss */
 body, html {
-  width: 100%;
-  height: 100%;
   padding: 0px;
   margin: 0px;
-  background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 38, ../scss/root.scss */
+/**********************************************
+					Main
+**********************************************/
+/* line 35, ../scss/root.scss */
+body {
+  background: #666;
+}
+
+/* line 39, ../scss/root.scss */
 #app-root {
   padding: 10px;
 }
 
-/* line 42, ../scss/root.scss */
+/* line 43, ../scss/root.scss */
 .module {
   background: #fff;
   padding: 10px;
@@ -45,18 +47,18 @@ body, html {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-/* line 48, ../scss/root.scss */
+/* line 49, ../scss/root.scss */
 .module .module-title {
   font-size: 2em;
 }
 
-/* line 55, ../scss/root.scss */
+/* line 56, ../scss/root.scss */
 .columns .module-body {
   -webkit-column-count: 2;
   -webkit-column-gap: 10px;
 }
 
-/* line 61, ../scss/root.scss */
+/* line 62, ../scss/root.scss */
 .inches {
   height: 300px;
   background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.5))), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.5))), white;
@@ -67,26 +69,26 @@ body, html {
   background-size: 2in 1in, 1in 2in;
 }
 
-/* line 68, ../scss/root.scss */
+/* line 69, ../scss/root.scss */
 .flex .module-body {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
   display: box;
 }
-/* line 72, ../scss/root.scss */
+/* line 73, ../scss/root.scss */
 .flex .module-member {
   background: rgba(0, 0, 0, 0.5);
   height: 50px;
   width: 50px;
   margin-right: 10px;
 }
-/* line 79, ../scss/root.scss */
+/* line 80, ../scss/root.scss */
 .flex .module-member:last-child {
   margin-right: 0px;
 }
 
-/* line 85, ../scss/root.scss */
+/* line 86, ../scss/root.scss */
 .flex.right .module-body {
   -webkit-box-pack: end;
   -moz-box-pack: end;
@@ -94,7 +96,7 @@ body, html {
   box-pack: end;
 }
 
-/* line 91, ../scss/root.scss */
+/* line 92, ../scss/root.scss */
 .flex.center .module-body {
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -102,7 +104,7 @@ body, html {
   box-pack: center;
 }
 
-/* line 97, ../scss/root.scss */
+/* line 98, ../scss/root.scss */
 .flex.justify .module-body {
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
@@ -110,7 +112,7 @@ body, html {
   box-pack: justify;
 }
 
-/* line 103, ../scss/root.scss */
+/* line 104, ../scss/root.scss */
 .flex.multi .module-body {
   -webkit-box-lines: multiple;
 }
